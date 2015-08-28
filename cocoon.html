@@ -1,0 +1,33 @@
+<!doctype html>
+<html style="touch-action: none;" debug="true">
+    <head>
+        <title>CocoonJS Firebug Lite</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=1024, user-scalable=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+        <script>
+            function handleOpenURL(url) {
+              setTimeout(function() {
+                window._openUrl = url;
+              }, 250);
+            }
+        </script>
+        <script src="cocoon.min.js"></script>
+        <script>
+            Cocoon.Utils.setAntialias(false);
+            Cocoon.Utils.setNPOTEnabled(true);
+        </script>
+        <script src="firebug-lite/build/firebug-lite.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h1>Firebug Lite</h1>
+        <div>
+            <input type="text" value="" placeholder="type in the query string" />
+        </div>
+    </body>
+</html>
