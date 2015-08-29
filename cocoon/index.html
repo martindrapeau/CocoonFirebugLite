@@ -13,8 +13,10 @@
         <script>
             function handleOpenURL(url) {
               setTimeout(function() {
-                alert(1);
-                window._openURL = url;
+                alert(url);
+                setTimeout(function() {
+                    window._openURL = url;
+                }, 3000);
               }, 250);
             }
         </script>
