@@ -12,7 +12,14 @@
 
         <script>
             function handleOpenURL(url) {
-                handleOpenURL._lastUrl = url;
+                setTimeout(function() {
+                    handleOpenURL._lastUrl = url;
+                });
+            }
+            function handleOpenUrl(url) {
+                setTimeout(function() {
+                    handleOpenUrl._lastUrl = url;
+                });
             }
         </script>
         <!--<script src="cocoon.min.js"></script>-->
