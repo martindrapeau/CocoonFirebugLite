@@ -12,15 +12,10 @@
 
         <script>
             function handleOpenURL(url) {
-              setTimeout(function() {
-                alert(url);
-                setTimeout(function() {
-                    window._openURL = url;
-                }, 3000);
-              }, 250);
+                handleOpenURL._lastUrl = url;
             }
         </script>
-        <script src="cocoon.min.js"></script>
+        <!--<script src="cocoon.min.js"></script>-->
         <script src="console.js"></script>
         <style type="text/css">
             body { background: white; color: black; }
